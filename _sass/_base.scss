@@ -180,8 +180,8 @@ pre {
 
 .flex-wrapper {
 	display: flex;
-	width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-	width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+	width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 8));
+	width: calc(#{$content-width} - (#{$spacing-unit} * 8));
 	margin-right: auto;
 	margin-left: auto;
 	flex-flow: row wrap;
