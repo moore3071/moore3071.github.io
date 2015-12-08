@@ -1,0 +1,12 @@
+.site-footer {
+	background: #999;
+	border-top:1px solid black;
+}
+
+.site-footer > .flex-wrapper {
+	justify-content: space-between;
+}
+
+.site-footer > .flex-wrapper > * {
+	flex: 1 0 0;
+}

@@ -13,6 +13,9 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html {
+	height: 100%;
+}
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
@@ -23,6 +26,9 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
 }
 
 
@@ -170,6 +176,15 @@ pre {
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
+}
+
+.flex-wrapper {
+	display: flex;
+	width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+	width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+	margin-right: auto;
+	margin-left: auto;
+	flex-flow: row wrap;
 }
 
 
