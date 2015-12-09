@@ -1,0 +1,47 @@
+<html width="100%" height="100%">
+<head>
+<style>
+	.about:hover ~ .about, .github:hover ~ .github, .blog:hover ~ .blog, .resume:hover ~ .resume {
+		fill: green;
+		stroke: red;
+	}
+	.about:hover ~ .top {
+		fill:#cc0;
+	}
+	.about:hover ~ .middle, .github:hover ~ .middle {
+		fill: #aa0;
+	}
+	.about:hover ~ .bottom, .github:hover ~ .bottom, .resume:hover ~ .bottom {
+		fill: #990;
+	}
+</style>
+</head>
+<body width=" 100%" height="100%">
+	<div style="width: 100vw; height: 50vw; margin: auto">
+		<svg width="100%" height="100%" viewBox="0 0 200 100">
+			<a xlink:href="about.html" class="about">
+				<text class="about" text-anchor="end" x="55" y="10" dominant-baseline="middle">About</text>
+			</a>
+			<a xlink:href="https://github.com/moore3071" class="github">
+				<text class="github" text-anchor="start" x="145" y="27" dominant-baseline="middle">Github</text>
+			</a>
+			<a xlink:href="resume.pdf" class="resume">
+				<text class="resume" text-anchor="end" x="55" y="52" dominant-baseline="middle">Resume</text>
+			</a>
+			<a xlink:href="blog" class="blog">
+				<text class="blog" text-anchor="start" x="145" y="77" dominant-baseline="middle">Blog</text>
+			</a>
+
+			<rect class="top" x="60.1" y="10" width="80" height="25" fill="#000070"/>
+			<rect class="middle" x="60.1" y="35" width="80" height="25" fill="#000090"/>
+			<rect class="bottom" x="60.1" y="60" width="80" height="25" fill="#0000a0"/>
+			<ellipse class="about" stroke="black" cx="100" cy="10" rx="40" ry="7.5"/>
+			<path class="github" stroke="black" d="M60 17 c0 15 80 15 80 0 v20 c0 15 -80 15 -80 0 Z" fill="black"/>
+			<path class="resume" stroke="black" d="M60 42 c0 15 80 15 80 0 v20 c0 15 -80 15 -80 0 Z" fill="black"/>
+			<path class="blog" stroke="black" d="M60 67 c0 15 80 15 80 0 v20 c0 15 -80 15 -80 0 Z" fill="black"/>
+			<line stroke-width=".1" stroke="black" x1="60" x2="60" y1="10" y2="70"/>
+			<line stroke-width=".1" stroke="black" x1="140" x2="140" y1="10" y2="70"/>
+		</svg>
+	</div>
+</body>
+</html>

@@ -9,6 +9,19 @@ dl, dd, ol, ul, figure {
 }
 
 
+.about:hover ~ .about, .github:hover ~ .github, .blog:hover ~ .blog, .resume:hover ~ .resume {
+	fill: green;
+	stroke: red;
+}
+.about:hover ~ .top {
+	fill:#cc0;
+}
+.about:hover ~ .middle, .github:hover ~ .middle {
+	fill: #aa0;
+}
+.about:hover ~ .bottom, .github:hover ~ .bottom, .resume:hover ~ .bottom {
+	fill: #990;
+}
 
 /**
  * Basic styling
