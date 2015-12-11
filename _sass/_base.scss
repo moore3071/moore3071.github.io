@@ -10,17 +10,18 @@ dl, dd, ol, ul, figure {
 
 
 .about:hover ~ .about, .github:hover ~ .github, .blog:hover ~ .blog, .resume:hover ~ .resume {
-	fill: green;
-	stroke: red;
+	fill: #52007c;
+	stroke: #333;
+	stroke-width: .5;
 }
 .about:hover ~ .top {
-	fill:#cc0;
+	fill:#00f;
 }
 .about:hover ~ .middle, .github:hover ~ .middle {
-	fill: #aa0;
+	fill: #00e;
 }
 .about:hover ~ .bottom, .github:hover ~ .bottom, .resume:hover ~ .bottom {
-	fill: #990;
+	fill: #00d;
 }
 
 /**
