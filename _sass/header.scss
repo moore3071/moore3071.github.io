@@ -28,8 +28,14 @@ header {
 
 .site-title {
 	width: 13em;
+	margin-left: 2em;
+	text-align: center;
 }
 
 .page-link {
 	display: block;
+}
+
+.page-link:hover, .site-title:hover {
+	background: #eee;
 }
