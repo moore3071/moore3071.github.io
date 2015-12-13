@@ -40,7 +40,9 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: column nowrap;
     flex-flow: column nowrap;
     height: 100%;
 }
@@ -193,11 +195,13 @@ pre {
 }
 
 .flex-wrapper {
+	display: -webkit-flex;
 	display: flex;
 	width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 8));
 	width: calc(#{$content-width} - (#{$spacing-unit} * 8));
 	margin-right: auto;
 	margin-left: auto;
+	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
 

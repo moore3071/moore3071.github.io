@@ -1,6 +1,18 @@
 ---
 ---
 
+#about_me {
+	width: 90%;
+	border: .5px black solid;
+	margin: auto;
+	margin-top: 1em;
+	background: #ddd;
+	-webkit-display: flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
 #id_me {
 	width: 20em;
 	text-align: center;
@@ -9,4 +21,79 @@
 	width: 70%;
 	margin: auto;
 	display: block;
+	border: 1px black solid;
+	margin-top: .5em;
+}
+
+#about_text {
+	margin: 1em;
+	margin-top: 3em;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+#experience {
+	width: 90%;
+	border: .5px black solid;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background: #ddd;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+}
+
+#experience > div {
+	width: 85%;
+	margin: auto;
+}
+
+#experience > h1, #experience > h2 {
+	text-align: center;
+}
+
+#experience > h2 {
+	border-top: 1px black solid;
+}
+
+#technologies {
+	width: 90%;
+	border: .5px black solid;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background: #ddd;
+}
+
+#tech_container {
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+
+.tech_descr {
+	width: 10em;
+	text-align: center;
+	background: #bbb;
+	border: .5px black solid;
+	margin-bottom: 5px;
+}
+
+.tech_descr > img {
+	border-bottom: .25px black solid;
+	width: 100%;
+}
+
+#technologies > h1, #technologies > p {
+	text-align: center;
+	border-bottom: 1px black solid;
 }
