@@ -32,7 +32,7 @@
 	flex: 1;
 }
 
-#experience {
+.about_text_wrapper {
 	width: 90%;
 	border: .5px black solid;
 	margin: auto;
@@ -47,16 +47,16 @@
 	flex-flow: column nowrap;
 }
 
-#experience > div {
+.about_text_wrapper > div {
 	width: 85%;
 	margin: auto;
 }
 
-#experience > h1, #experience > h2 {
+.about_text_wrapper > h1, .about_text_wrapper > h2 {
 	text-align: center;
 }
 
-#experience > h2 {
+.about_text_wrapper > h2 {
 	border-top: 1px black solid;
 }
 
