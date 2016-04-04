@@ -1,0 +1,35 @@
+---
+---
+
+#home {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+#main-banner {
+	width: 70vw;
+	display: flex;
+	flex-flow: row wrap;
+}
+.full-width {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-around;
+	margin: 3px 0px;
+}
+.nav-container {
+	font-size: 20pt;
+}
+#mainpicture {
+	width: 15vw;
+	border-radius: 15vw;
+	border: 4px black solid;
+}
+#myinfo {
+	font-size: 30pt;
+}
