@@ -29,6 +29,12 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 
+.page-content {
+	width: 100%;
+	flex: 1;
+	display: flex;
+	flex-flow: column nowrap;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
