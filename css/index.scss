@@ -8,6 +8,9 @@
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	a, a:link, a:visited, a:hover, a:active {
+		color: black;
+	}
 }
 #main-banner {
 	width: 70vw;
@@ -26,9 +29,6 @@
 }
 .nav-container {
 	font-size: 20pt;
-	a, a:link, a:visited, a:hover, a:active {
-		color: black;
-	}
 }
 #mainpicture {
 	width: 15vw;
