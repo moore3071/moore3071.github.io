@@ -1,11 +1,15 @@
 header {
-	background: #aaa;
 	display: flex;
 	flex-flow: row nowrap;
-	border-bottom: 2px solid black;
+	margin-top: 4px;
 	vertical-align: middle;
 	line-height: 2.5em;
+	min-height: 2.5em;
 	font-family: 'Droid Sans Mono';
+	a, a:link, a:visited, a:hover, a:active {
+		color: black;
+		background: white;
+	}
 }
 
 .site-nav {
@@ -37,5 +41,5 @@ header {
 }
 
 .page-link:hover, .site-title:hover {
-	background: #eee;
+	//background: #eee;
 }

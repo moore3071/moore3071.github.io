@@ -26,6 +26,9 @@
 }
 .nav-container {
 	font-size: 20pt;
+	a, a:link, a:visited, a:hover, a:active {
+		color: black;
+	}
 }
 #mainpicture {
 	width: 15vw;
