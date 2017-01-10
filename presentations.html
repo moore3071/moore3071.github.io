@@ -4,21 +4,29 @@ title: Presentations
 permalink: /presentations/
 extra_css: presentations
 ---
-<div class="presentation-container">
-	<div class="presentation-image">
-		<img src="../images/logos/git.svg" id="profile_pic"></img>
-	</div>
-	<div class="presentation-text">
-		<h2> <a href="https://moore3071.github.io/git_talk_basic">Git introduction</a> </h2>
-		<p> A basic slideshow meant to give an introduction to using Git from simple commands to how to visualize the git repository. </p>
-	</div>
-</div>
-<div class="presentation-container">
-	<div class="presentation-image">
-		<img src="../images/licenses.svg" id="profile_pic"></img>
-	</div>
-	<div class="presentation-text">
-		<h2> <a href="https://moore3071.github.io/link">Licenses presentation</a> </h2>
-		<p> A presentation on the necessity of licenses for open source and proprietary projects. Includes a summary of common licenses, from MIT to Apache, a listing of some more esoteric licenses such as the WTFPL, and a discussion of licenses for non-software projects (i.e. the Creative Commons licenses)</p>
-	</div>
-</div>
+
+{% for post in site.posts %}
+  {% if post.categories contains 'presentation'%}
+
+    <div class="presentation-container">
+
+	    {% if post.image %}
+	    <div class="presentation-image"><img src="{{post.image}}" id="profile_pic"></img></div>
+	    {% else %}
+	    <div class="presentation-image"><img src="../images/placeholder.svg" id="profile_pic"></img></div>
+	    {% endif %}
+
+	    <div class="presentation-text">
+		    {% if post.link %}
+		    <h2> <a href="{{post.link}}">{{post.title}}</a></h2>
+		    {% else %}
+		    <h2> {{post.title}} (Not yet published)</h2>
+		    {% endif %}
+
+		    <p>{{post.content}}</p>
+
+	    </div>
+    </div>
+
+  {% endif %}
+{% endfor %}

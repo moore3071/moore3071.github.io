@@ -13,18 +13,13 @@ extra_css: index
 			</div>
 		</div>
 		<div class="full-width">
+			{% for my_page in site.pages %}
+			{% if my_page.title %}
 			<div class="nav-container">
-				<a href="about/">About</a>
+				<a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
 			</div>
-			<div class="nav-container">
-				<a href="resume/">Resume</a>
-			</div>
-			<div class="nav-container">
-				<a href="https://github.com/moore3071">Github</a>
-			</div>
-			<div class="nav-container">
-				<a href="presentations/">Presentations</a>
-			</div>
+			{% endif %}
+			{% endfor %}
 		</div>
 	</div>
 </div>
