@@ -9,11 +9,9 @@
 title: Brandon Moore
 email: moore.3071@osu.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My name is Brandon Moore. I am an alumnus from Ohio State University and president emeritus of the Open Source Club at OSU. I am a strong proponent of open source software and best practices in development.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://moore3071.github.io" # the base hostname & protocol for your site
 github_username:  moore3071
 
 # Build settings
