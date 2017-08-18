@@ -13,7 +13,7 @@
 
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+	  <a class="page-link" id="{{ my_page.title }}header" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
       <a class="page-link" href="https://moore3071.github.io/resume/resume.pdf">Resume</a>
