@@ -15,4 +15,4 @@ url: "https://moore3071.github.io" # the base hostname & protocol for your site
 github_username:  moore3071
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
