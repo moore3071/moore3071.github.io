@@ -45,3 +45,12 @@ And what about my lost GPG key? Currently 'John The Ripper' is working on findin
 2. Keep better track of my files when changing computers or OS
 3. Maybe use a password manager
 
+## Update:
+
+After doing some minor calculations, it seem I might not be cracking my GPG password with John. First let's go over some basic facts.
+
+- My password was most likely around 10 characters wrong
+- I'm running John on 4 year old hardware that means John is guessing around 50,000 passwords per second
+- There are 94 character choices per position
+
+Let's come up with a basic formula for how many seconds it takes. First how many passwords are there? Well there are 94 one letter passwords plus 94\*94 two letter passwords plus 94\*94\*94 three letter passwords and so on. This is just a geometric series, which can be expressed as $$\frac{1-94^{n+1}}{1-94}$$ for up to n-character passwords. Let's just call this f(n) for now. So now if we divide f(n) by 50,000 passwords/second, we get how many seconds to guess the whole space. So our formula is $$\frac{f(n) passwords}{50,000\frac{passwords}{second}}$$. So, what is f(10) passwords divided by 50,000 passwords/second? This comes out to 1.089e15 seconds or around 34.5 million years. Here's hoping the algorithms by John get lucky.
