@@ -1,11 +1,11 @@
 <div id="comments" {%if site.data.comments[post_slug] == null %}aria-hidden="true"{% endif %}>
   <h2> Comments </h2>
-  {%if site.data.comments[post_slug] %}
-    {%for comment in site.data.comments[post_slug]%}
+  {%if site.data.comments[page.slug] %}
+    {%for comment in site.data.comments[page.slug]%}
       <div class="comment">
-        <h4> {{comment.name}} </h4>
+        <h4> {{comment[1].name}} </h4>
 	<div>
-          {{comment.message | markdownify}}
+          {{comment[1].message | markdownify}}
 	</div>
       </div>
     {%endfor%}
