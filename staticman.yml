@@ -1,0 +1,17 @@
+comments:
+  allowedFields: ["name", "message"]
+  allowedOrigins: ["moore3071.github.io"]
+  branch: "master"
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "timestamp-seconds"
+  format: "yaml"
+  moderation: false
+  name: "moore3071.github.io"
+  notifications:
+    enabled: false
+  path: "_data/comments/{options.slug}"
+  filename: "entry{@timestamp}"
+  requiredFields: ["name", "message"]

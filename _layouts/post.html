@@ -17,3 +17,11 @@ extra_css: post
   </div>
 
 </article>
+
+  <form id="add-comment" class="form" action="https://api.staticman.net/v2/entry/moore3071/moore3071.github.io/master/comments" method="post">
+    <input type="hidden" name="options[slug]" value="{{ post_slug }}"/>
+    <input class="field" type="text" name="name" placeholder="Name" required/>
+    <textarea class="field" type="text" name="comment" rows="10" placeholder="Comment. Markdown is accepted." required></textarea>
+    <input type="submit" value="Send" />
+  </form>
+  {% include post-comments.html %}

@@ -1,0 +1,13 @@
+<div id="comments" {%if site.data.comments[post_slug] == null %}aria-hidden="true"{% endif %}>
+  <h2> Comments </h2>
+  {%if site.data.comments[post_slug] %}
+    {%for comment in site.data.comments[post_slug]%}
+      <div class="comment">
+        <h4> {{comment.name}} </h4>
+	<div>
+          {{comment.message | markdownify}}
+	</div>
+      </div>
+    {%endfor%}
+  {%endif%}
+</div>
