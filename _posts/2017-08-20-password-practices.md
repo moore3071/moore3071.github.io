@@ -1,6 +1,6 @@
 ---
 layout: post
-title:	"Password practices as a user and provider"
+title:	"Password practices as a user"
 date:	2017-08-20
 categories: blogging
 ---
