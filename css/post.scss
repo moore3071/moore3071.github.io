@@ -55,3 +55,12 @@ table {
 .comment {
 	border-top: .5px black dotted;
 }
+.bordered-table {
+	border-collapse: collapse;
+	td {
+		border: 1px black solid;
+	}
+}
+.centered {
+	text-align: center;
+}
