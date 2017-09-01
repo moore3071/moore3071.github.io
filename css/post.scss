@@ -57,7 +57,7 @@ table {
 }
 .bordered-table {
 	border-collapse: collapse;
-	td {
+	td,th {
 		border: 1px black solid;
 	}
 }
