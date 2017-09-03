@@ -1,0 +1,4 @@
+_id: 950c1f90-90cb-11e7-88e7-079c73580266
+name: Bryon D. Foltz
+message: "Awesome article Malide! Was just starting to look into proper password security for a website I am building, and you make hashing much simpler than most explanations I have read. One suggestion for you: \r\n\r\nAs obvious as it seems to you and me you might want to mention the way you verify a password against a stored hash is to hash the password and compare the hashes since hashing is one way."
+date: 1504458971
