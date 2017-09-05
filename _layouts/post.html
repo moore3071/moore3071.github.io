@@ -19,6 +19,7 @@ extra_css: post
 </article>
 
   <form id="add-comment" class="form" action="https://api.staticman.net/v2/entry/moore3071/moore3071.github.io/master/comments" method="post">
+    <p><b>your comment may take up to ten minutes to show up </b></p>
     <input type="hidden" name="options[redirect]" value="{{ page.url | prepend: site.url }}"/>
     <input type="hidden" name="options[slug]" value="{{ page.slug }}"/>
     <input class="field" type="text" name="fields[name]" placeholder="Name" required/>

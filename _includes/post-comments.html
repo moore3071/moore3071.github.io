@@ -3,7 +3,8 @@
   {%if site.data.comments[page.slug] %}
     {%for comment in site.data.comments[page.slug]%}
       <div class="comment">
-        <h4> {{comment[1].name}} </h4>
+        <h3> {{comment[1].name}} - </h3> 
+        <h4> {{comment[1].date | date: "%Y, %b %d, %a %T %Z"}} </h4>
 	<div>
           {{comment[1].message | markdownify}}
 	</div>
