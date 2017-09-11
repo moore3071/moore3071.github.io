@@ -1,11 +1,11 @@
 ---
 ---
 
+@import
+	"vars"
+;
+
 .page-content {
-	width: 100%;
-	flex: 1;
-	display: flex;
-	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	a, a:link, a:visited, a:hover, a:active {
@@ -31,6 +31,7 @@
 	font-size: 20pt;
 }
 #mainpicture {
+	min-width: 280px;
 	width: 15vw;
 	border-radius: 15vw;
 	border: 4px black solid;
@@ -38,4 +39,17 @@
 #myinfo {
 	font-size: 30pt;
 	max-width: 100%;
+	word-break: break-all;
+}
+@include media-query(1020px) {
+	#myinfo {
+		text-align: center;
+	}
+}
+@include media-query(640px) {
+	.full-width {
+		flex-flow: column nowrap;
+		align-items: center;
+		text-align: center;
+	}
 }

@@ -1,12 +1,24 @@
 .site-footer {
 	border-top:1px solid black;
 	margin-top: 1em;
+
+	.flex-wrapper {
+		justify-content: space-between;
+		div {
+			flex: 1 0 0;
+		}
+		ul {
+			margin: auto;
+		}
+	}
 }
 
-.site-footer > .flex-wrapper {
-	justify-content: space-between;
-}
-
-.site-footer > .flex-wrapper > * {
-	flex: 1 0 0;
+@include media-query(1020px) {
+	.site-footer{
+		.flex-wrapper {
+			flex-flow: column nowrap;
+			align-items: center;
+			text-align: center;
+		}
+	}
 }

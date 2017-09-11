@@ -4,11 +4,12 @@ header {
 	margin-top: 4px;
 	vertical-align: middle;
 	line-height: 2.5em;
-	min-height: 2.5em;
 	font-family: 'Droid Sans Mono';
 	a, a:link, a:visited, a:hover, a:active {
 		color: black;
 		background: white;
+		width: 9em;
+		text-align: center;
 	}
 }
 
@@ -32,7 +33,6 @@ header {
 
 .site-title {
 	width: 13em;
-	margin-left: 2em;
 	text-align: center;
 }
 
